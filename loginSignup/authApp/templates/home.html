@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+
+{% block body %}
+
+{% include 'messages.html' %}
+
+<h1>You are logged in successfull {{user.username}} ekhn biriyani khawan.</h1>
+
+<a href="{% url 'logoutPage' %}">Logout From Here.</a>
+<a href="{% url 'add_student' %}">Add Model Students Here.</a>
+    
+{% endblock body %}
+    

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+
+
+{% block body %}
+
+
+
+<h2>Register</h2>
+{% include 'messages.html' %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{r.as_p}}
+    <button type="submit">Register</button>
+    <p>Already have an account? <a href="{% url 'loginPage' %}">Login here</a>.</p>
+</form>
+
+
+    
+{% endblock body %}
+    

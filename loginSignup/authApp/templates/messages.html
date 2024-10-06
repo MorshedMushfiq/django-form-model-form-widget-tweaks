@@ -1,0 +1,38 @@
+
+{% if messages %}
+
+
+
+{% for msg in messages %}
+
+
+
+{% if msg.tags == "success" %}
+{{msg}}
+    
+{% endif %}
+
+
+{% if msg.tags == "warning" %}
+{{msg}}
+    
+{% endif %}
+
+
+{% if msg.tags == "error" %}
+{{msg}}
+    
+{% endif %}
+    
+    
+    
+
+
+    
+{% endfor %}
+    
+
+
+    
+{% endif %}
+    
